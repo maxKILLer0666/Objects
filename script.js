@@ -10,10 +10,7 @@ console.log(person)
 person.city = "Astana"
 console.warn(person)
 //task 3
-function greet(){
-    console.log("Привет, меня зовут " + person.name + ", мне " + person.age + " лет!")
-}
-
+person.greet = function () { console.log(`Привет, меня зовут ${this.name}, мне ${this.age} лет!`); }
 greet()
 //task 4
 obj1 = { a: 10, b: 20 }
